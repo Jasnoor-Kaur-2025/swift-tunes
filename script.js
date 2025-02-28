@@ -18,7 +18,7 @@ const albumColors = {
 
 // Function to extract songs from an album
 async function getSongs(albumName) {
-    let a = await fetch("/songs/" + albumName);
+    let a = await fetch("./songs/" + albumName);
 let response = await a.text();
 
     let div = document.createElement("div");
@@ -38,7 +38,7 @@ let response = await a.text();
 
 // Play the selected song
 const playMusic = (track, albumName) => {
-    currentSong.src = `/songs/${track}`;
+    currentSong.src = `./songs/${track}`;
     currentSong.play(); // Play the song
 };
 
