@@ -38,7 +38,7 @@ let response = await a.text();
 
 // Play the selected song
 const playMusic = (track, albumName) => {
-currentSong.src = `./assets/songs/${albumName}/${track}`;
+    currentSong.src = `https://jasnoor-kaur-2025.github.io/swift-tunes/assets/songs/${albumName}/${track}`;
     currentSong.play(); // Play the song
 };
 
